@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color:#2980b9;
     margin: 0;
     padding: 20px;
 }
@@ -8,14 +8,14 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #f0f0f0;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px #209d5c;
 }
 
 h1 {
-    color: #2c3e50;
+    color: #2980b9;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -27,7 +27,7 @@ h1 {
 label {
     display: block;
     margin-bottom: 8px;
-    color: #34495e;
+    color: #209d5c;
     font-weight: bold;
 }
 
@@ -45,7 +45,7 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-    border-color: #3498db;
+    border-color: #209d5c;
     outline: none;
 }
 
@@ -83,19 +83,19 @@ button:hover {
 
 .form-section {
     background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #ffd034;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 25px;
 }
 
 .form-section h2 {
-    color: #3498db;
+    color: #209d5c;
     font-size: 1.2em;
     margin-top: 0;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #3498db;
+    border-bottom: 2px solid #ffd034;
 }
 
 .form-row {
