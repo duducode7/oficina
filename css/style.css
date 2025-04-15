@@ -8,15 +8,15 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #f0f0f0;
+    background-color: #f0f0f000;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px #209d5c;
+    box-shadow: 0 0 20px #000000;
 }
 
 h1 {
-    color: #2980b9;
-    text-align: center;
+    color: #000000;
+    text-align: left;
     margin-bottom: 30px;
 }
 
@@ -60,7 +60,7 @@ textarea:focus {
 }
 
 button {
-    background-color: #3498db;
+    background-color: #209d5c;
     color: white;
     padding: 12px 24px;
     border: none;
@@ -87,6 +87,7 @@ button:hover {
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .form-section h2 {
