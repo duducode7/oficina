@@ -15,76 +15,178 @@
     <main>
 
         <div class="container">
-            <h1>Ordem de Serviço Mecânico</h1>
+            <div class="form-section">
+                <h1>Ordem de Serviço Empresa</h1>
+            </div>
             <form id="formOrdemServico">
 
+                
                 <div class="form-section">
                     <h2>Dados do Cliente</h2>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="nomeCliente">Nome Completo:</label>
-                            <input type="text" id="nomeCliente" required>
+                            <label for="nomeCliente">Nome:</label>
+                            <input type="text" id="nomeCliente" placeholder="insira seu nome..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sobrenomeCliente">Sobrenome</label>
+                            <input type="text" id="sobrenomeCliente" placeholder="insira seu Sobrenome..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cpf">CPF</label>
+                            <input type="number" id="cpf" placeholder="000.000.000-00" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dataNasc">Data de Nascimento:</label>
+                            <input type="date" id="dataNasc" required>
                         </div>
                         <div class="form-group">
                             <label for="telefone">Telefone:</label>
-                            <input type="tel" id="telefone" pattern="[0-9]{11}" required>
+                            <input type="tel" id="telefone" placeholder="(00) 00000-0000" required>
                         </div>
                         <div class="form-group">
                             <label for="email">E-mail:</label>
-                            <input type="email" id="email">
+                            <input type="email" id="email" placeholder="insira seu e-mail..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="estadoCivil">Estado Civil:</label>
+                            <select id="estadoCivil" name="estadoCivilList" form="listform" required>
+                                <option value=""></option>
+                                <option value="Casado">Casado(a)</option>
+                                <option value="solteiro">Solteiro(a)</option>
+                                <option value="viuvo">Viuvo(a)</option>
+                                <option value="divorciado">Divorciado(a)</option>
+                            </select>
+                            <div class="form-group">
+                                <label for="genero">Gênero:</label>
+                                <select id="genero" name="genero" form="listform">
+                                    <option value=""></option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="n/a">Prefiro não dizer</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="deficiência?">Você possui algum tipo de deficiência ou problema? Se sim, qual?:</label>
+                                <input type="text" id="deficiencia" required>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="form-section">
-                    <h2>Dados do Veículo</h2>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="veiculoMarca">Marca:</label>
-                            <input type="text" id="veiculoMarca" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="veiculoModelo">Modelo:</label>
-                            <input type="text" id="veiculoModelo" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="veiculoAno">Ano:</label>
-                            <input type="number" id="veiculoAno" min="1900" max="2024" required>
+                
+                    
+                    <div class="form-section">
+                        <h2>Dados do Endereço</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="rua">Rua:</label>
+                                <input type="text" id="rua" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Numero">Número:</label>
+                                <input type="number" id="Numero" min="0000" max="9999" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="bairro">Bairro</label>
+                                <input type="text" id="bairro">
+                            </div>
+                            <div class="form-group">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" id="cidade">
+                            </div>
+                            <div class="form-group">
+                                <label for="estado">Estado</label>
+                                <input type="text" id="estado">
+                            </div>
+                            <div class="form-group">
+                                <label for="cep">CEP:</label>
+                                <input type="number" id="cep" placeholder="00000-000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Complemento">Complemento</label>
+                                <input type="text" id="Complemento">
+                            </div>
+                            
                         </div>
                     </div>
-                </div>
 
                 <div class="form-section">
-                    <h2>Detalhes do Serviço</h2>
+                    <h2>Formação Academica</h2>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="tipoServico">Tipo de Serviço:</label>
+                            <label for="escolaridade">Qual é o seu nível mais alto de escolaridade?:</label>
                             <select id="tipoServico" required>
-                                <option value="">Selecione...</option>
-                                <option>Revisão Preventiva</option>
-                                <option>Troca de Óleo</option>
-                                <option>Alinhamento/Balanceamento</option>
-                                <option>Reparos no Motor</option>
-                                <option>Freios</option>
+                                <option value=""></option>
+                                <option>Ensino Fundamental</option>
+                                <option>Ensino Médio</option>
+                                <option>Graduação</option>
+                                <option>Pós-graduação (especialização, mestrado, doutorado)</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="dataServico">Data do Serviço:</label>
-                            <input type="date" id="dataServico" required>
+                            <label for="ano">Ano de conclusão do seu curso:</label>
+                            <input type="number" id="ano" min="1950" max="2100" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="descricao">Descrição do Problema:</label>
-                        <textarea id="descricao" rows="4" required></textarea>
+                        <label for="escola">Nome da instituição de ensino onde você obteve seu diploma:</label>
+                        <input type="text" id="escola" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="area">Qual é a sua área de estudo principal?:</label>
+                        <input type="text" id="area" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tecnico">Você possui algum curso técnico ou profissionalizante? Se sim, qual?:</label>
+                        <input type="text" id="tecnico" >
+                    </div>
+                    <div class="form-group">
+                        <label for="empregoAtual">Qual é o seu emprego atual?:</label>
+                        <input type="text" id="empregoAtual" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="experiencia">Você tem experiência de trabalho na sua área de formação? Se sim, descreva:</label>
+                        <input type="text" id="experiencia" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="idioma">Quais idiomas você fala e qual é o seu nível de fluência?:</label>
+                        <input type="text" id="idioma" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="premio">Você obteve alguma certificação ou prêmio acadêmico durante o seu curso? Se sim, descreva:</label>
+                        <textarea id="premio" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="descricao">Caso tenha mais algo para falar coloque aqui⬇:</label>
+                        <textarea id="descricao" rows="4" ></textarea>
                     </div>
                 </div>
 
                 <div class="form-section">
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="newsletter">
-                        <label for="newsletter">Desejo receber atualizações e promoções por e-mail</label>
+                    <h2>Informações Adicionais</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dependente">Você tem algum dependente? Se sim, quantos?:</label>
+                            <input type="text" id="dependente" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="hobby">Qual é o seu hobby ou atividade favorita?:</label>
+                            <input type="text" id="hobby">
+                        </div>
+                        <div class="form-group">
+                            <label for="comoConheceu">De que forma você ficou sabendo sobre nossos serviços?:</label>
+                            <input type="text" id="comoConheceu" required >
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <label for="promocoes">Você gostaria de receber atualizações e promoções da nossa empresa por e-mail?:</label>
+                                <input for="checkbox-group">
+                            </div>
+                        </div>
                     </div>
                 </div>
+
 
                 <button type="submit">Enviar Ordem</button>
             </form>
